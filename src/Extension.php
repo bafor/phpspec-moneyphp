@@ -11,8 +11,9 @@ class Extension implements \PhpSpec\Extension
     {
         $container->define(
             'bafor.matchers.be_equal_money',
-            function () {
-                return new BeEqualMoneyMatcher();
+            function (ServiceContainer $container) {
+
+                return new BeEqualMoneyMatcher($container->get('formatter.presenter'));
             },
             ['matchers']
         );

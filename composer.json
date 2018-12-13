@@ -1,0 +1,29 @@
+{
+  "name": "bafor/phpspec-moneyphp-matchers",
+  "description": "phpspec extension with matchers for moneyphp",
+  "type": "phpspec-extension",
+  "authors": [
+    {
+      "name": "Bartosz Foremniak",
+      "email": "bartosz.foremniak@gmail.com"
+    }
+  ],
+  "keywords": [
+    "phpspec",
+    "matchers",
+    "money",
+    "moneyphp"
+  ],
+  "license": "Apache-2.0",
+  "require": {
+    "php": ">=7.0",
+    "phpspec/phpspec": "^4.2",
+    "moneyphp/money": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bafor\\PhpSpecMatchers\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
